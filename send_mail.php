@@ -71,14 +71,8 @@ if(isset($_POST['Email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers);  
+mail($email_to, $email_subject, $email_message, $headers); 
+
+echo $thankYou="<p>Thank you! I will be in contact with you shortly.</p>"; 
 ?>
  
-<!-- include your own success html here -->
- 
-Thank you for contacting me. I will be in touch with you soon.
- 
-<?php
- 
-}
-?>
