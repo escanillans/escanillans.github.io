@@ -112,31 +112,30 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   <!-- Work Experience Grid Section -->
-    <section class="portfolio" id="work_experience">
-      <div class="container">
-        <h2 class="text-center">Work Experience</h2>
-        <hr>
-        <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/afrl.jpg" alt="">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="work_experience">
+    <h2 class="text-center">Work Experience</h2>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4 portfolio-item">
+        <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/pcc.png" alt="">
-            </div>
-          </div>
+            <img class="img-fluid" src="img/afrl.jpg" alt="">
+        </div>
+      </div>
+    <div class="col-sm-4 portfolio-item">
+      <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+        <div class="caption">
+          <div class="caption-content">
+            <i class="fa fa-search-plus fa-3x"></i>
+          </div>  
+        </div>
+          <img class="img-fluid" src="img/pcc.png" alt="">
+      </div>
+    </div>
           <div class="col-sm-4 portfolio-item">
             <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
               <div class="caption">
@@ -158,20 +157,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
               <img class="img-fluid" src="img/byutv.png" alt="">
             </div>
           </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/qualtrics.png" alt="">
-            </div>
-          </div>
           <div class="col-sm-2"></div>
         </div>
       </div>
-    </section>
 
   
   <!-- Portfolio Section -->
@@ -238,6 +226,162 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Automatic Target Recognition Center</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/horse2zebra.jpg" alt="">
+                  <p>Data augmentation research for the Air Force Research Laboratory Sensors Directorate using cycle-consistent adversal networks (CycleGANs). More information 
+                    coming later after public release.
+                  </p>
+                  <ul class="list-inline item-details">
+                    <li>Technologies: TensorFlow, Python, Supercomputing
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Perception, Control, and Cognition Laboratory - BYU</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/holodeck.png" alt="">
+                  <p>Inspired by recent successes in using deep reinforcement learning to beat 2D Atari games, we wanted to explore using deep learning in realistic 3D environments. Subsequently, I designed and built a photo-realistic world simulator in the gaming environment Unreal Engine that we could use to simulate agents in the real world.</p>
+                  <p>With the simulator, we have been able to study deep reinforcement learning algorithms that can extract information from simulated sensors and transform it into low-level actions to achieve goals in complex environments. The simulator architecture and the sensors I built are being used in a variety of research projects in the lab; for example, we are now using deep reinforcement learning in our simulator to teach drones to quickly navigate high-risk environments like forests.</p>
+                  <ul class="list-inline item-details">
+                    <li>Technologies: TensorFlow, Python, C++, Unreal Engine 4
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Software Engineer Intern - LGS Innovations</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/lgs.jpg" alt="">
+                  <p>I had the incredible opportunity to intern for LGS Innovations in Westminster, Colorado during summer 2016. I worked on the Base Station Router , a flagship product for LGS Innovations. I designed and built a new multi-threaded logger process for the BSR. This project improved logging for the BSR and made it much easier for developers to debug products that were deployed by the government in remote areas.</p>
+                      
+                  <p>My team designed it to be highly customizable so that it could be used for various customers and builds of the BSR. Our process enables dynamic manipulation of log filters and encrypts the logs. It uses a GUI to help customers and developers easily interact with it. Our project was integrated into the main codebase during my last week; many employees commented that they had never seen an intern project be integrated so quickly!</p>
+                      
+                  <p>The project gave me more experience working with a massive codebase in C++. It also gave me the opportunity to work with many different, highly-skilled engineers across the company who specialize in different areas.</p>
+                  <ul class="list-inline item-details">
+                    <li>Technologies: C++, Embedded Programming
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Front End Development - BYU Broadcasting</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/byutv_website.png" alt="">
+                  <p>At BYU Broadcasting, I worked on a team of 7 full-time employees and 10 students that created websites and apps for platforms such as Android, iOS, Xbox, Roku, Windows Phone, Amazon FireTV, Chromecast, etc. My work focused on integrating our back-end services into the user interfaces that make up our websites and applications. In addition to programming in languages such as JavaScript, CSS, HTML, and C#, I learned to use many libraries, frameworks, and plugins such as jQuery, Gulp, NodeJS, Handlebars, Polymer, Bootstrap, etc. The main websites I worked on included byutv.org , byuradio.org, and byutvi.org. Our team built the platform, CMS, and front-end of these websites using a variety of classic as well as experimental technologies.</p>
+                      
+                  <p>Every two weeks, we each had the opportunity to use a planning week to explore new technologies and areas of interest. We also gave and received trainings on the new technologies that we were learning. Working at BYU Broadcasting helped me to do interesting projects like implementing a custom twitter feed, building a server, and even writing my own app. I had the incredible opportunity to write production-level code in a professional environment using exciting new technologies.</p>
+                  <ul class="list-inline item-details">
+                    <li>Technologies: JavaScript, HTML, CSS
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Senior Capstone - Qualtrics</h2>
+                  <hr class="star-primary">
+                  <img class="img-fluid img-centered" src="img/qualtrics.png" alt="">
+                  <p>In collaboration with Qualtrics and as part of a BYU senior capstone project, 3 students and I designed machine learning and natural language processing tools that automatically identified actionable responses in free-response surveys. It was able to filter out over 85% of non-useful responses (as judged by human labeling) and rank responses on the degree of usefulness. This makes it easier for organizations to quickly find and use the most useful responses from many thousands of survey responses.</p>
+                  <ul class="list-inline item-details">
+                    <li>Technologies: TensorFlow, Apache Spark, Python</li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </body>
 </html>
