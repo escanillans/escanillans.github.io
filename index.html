@@ -17,44 +17,28 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
+      *, *:before, *:after { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #2F2556; color: #B9B5C7; font: 14px 'Open Sans', sans-serif; }
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
+      /* You can safely remove the next two lines */
+      .top { padding-right: 20px; background: #261F41; text-align: right; }
+      a { color: rgba(255,255,255,0.6); text-transform: uppercase; text-decoration: none; line-height: 42px; }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+      h1 { padding: 60px 0; font-weight: 400; text-align: center; }
+      p { margin: 0 0 20px; line-height: 1.5; }
+
+      .main { margin: 0 auto; padding: 40px 20px; max-width: 960px; font-size: 19px; line-height: 30px;}
+      .main a { color: #DB7580; text-transform: none; }
+
+      /* Styling the Popup Window */
+      .popup-trigger { display: block; margin: 0 auto; padding: 20px; max-width: 260px; background: #4EBD79; color: #fff;
+                 font-size: 18px; font-weight: 700; text-align: center; text-transform: uppercase; line-height: 24px; cursor: pointer; }
+        .popup {display: none; position: absolute; top: 100px; left: 50%; width: 700px; margin-left: -350px; padding: 50px 30px;
+            background: #fff; color: #333; font-size: 19px; line-height: 30px; border: 10px solid #150E2D; z-index: 9999;}
+        .popup-mobile {position: relative; top: 0; left: 0; margin: 30px 0 0; width: 100%;}
+          .popup-btn-close {position: absolute; top: 8px; right: 14px; color: #4EBD79; font-size: 14px; font-weight: bold; text-transform: uppercase; cursor: pointer;}
 </style>
 <body class="w3-black">
 
@@ -167,18 +151,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <h2>Modal Example</h2>
 
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal 1</button>
-
-    <a class="popup-trigger">Popup Madrid</a>
+<!-- Popup Section here -->
+    <a class="popup-trigger" rel="nofollow">Popup Madrid</a>
+    <div class="main">
+      This is a version of the Simple Responsive Popup Window that allows you to add more than one (unlimited) number of popups while keeping the code clean and simplified. Resize your browser to test how it behaves on mobile. <br><br>
+      The functionality is very basic, so you would probably have to built upon it regarding your project needs. To <a href="http://stanhub.com/multiple-responsive-popup-windows-on-same-page/">download this demo</a>, please go to the main article on Stanhub.
+    </div>
     <div class="popup">
-      Madrid content
+      Madrid is a city in Europe and the capital and largest city of Spain. The population of the city is almost 3.2 million and that of the Madrid metropolitan area, around 6.3 million. <br><br>
+      It is the third-largest city in the European Union, after London and Berlin, and its metropolitan area is the third-largest in the European Union after Paris and London. The city spans a total of 604.3 km2 (233.3 sq mi).
       <span class="popup-btn-close">close</span>
     </div>
- 
-    <a class="popup-trigger">Popup Rome</a>
+
+    <a class="popup-trigger" rel="nofollow">Popup Rome</a>
     <div class="popup">
-      Rome content
+      Rome is a city and special comune (named Roma Capitale) in Italy. Rome is the capital of Italy and of the Lazio region. With 2.9 million residents, it is also the country's largest and most populated comune and fourth-most populous city in the European Union by population within city limits. <br><br>
+      Vatican City is an independent country within the city boundaries of Rome, the only existing example of a country within a city: for this reason Rome has been often defined as capital of two states.
       <span class="popup-btn-close">close</span>
     </div>
 
@@ -231,42 +219,44 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- END PAGE CONTENT -->
 </div>
 
-<script>
-// Popup Window
-var scrollTop = '';
-var newHeight = '100';
- 
-$(window).bind('scroll', function() {
-  scrollTop = $( window ).scrollTop();
-  newHeight = scrollTop + 100;
-});
- 
-$('.popup-trigger').click(function(e) {
-  e.stopPropagation();
-  if(jQuery(window).width() < 767) {
-    $(this).after( $(this).nextAll('.popup:first') );
-    $(this).nextAll('.popup:first').show().addClass('popup-mobile').css('top', 0);
-    $('html, body').animate({
-      scrollTop: $(this).nextAll('.popup:first').offset().top
-    }, 500);
-  } else {
-    $('.popup').hide();
-    $(this).nextAll('.popup:first').removeClass('popup-mobile').css('top', newHeight).toggle();
-  };
-});
- 
-$('html').click(function() {
-  $('.popup').hide();
-});
- 
-$('.popup-btn-close').click(function(e){
-  $(this).parent().hide();
-});
- 
-$('.popup').click(function(e){
-  e.stopPropagation();
-});
-</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+    // Popup Window
+    var scrollTop = '';
+    var newHeight = '100';
+
+    $(window).bind('scroll', function() {
+       scrollTop = $( window ).scrollTop();
+       newHeight = scrollTop + 100;
+    });
+
+    $('.popup-trigger').click(function(e) {
+       e.stopPropagation();
+     if(jQuery(window).width() < 767) {
+       $(this).after( $(this).nextAll('.popup:first') );
+       $(this).nextAll('.popup:first').show().addClass('popup-mobile').css('top', 0);
+       $('html, body').animate({
+        scrollTop: $(this).nextAll('.popup:first').offset().top
+      }, 500);
+     } else {
+       $('.popup').hide();
+       $(this).nextAll('.popup:first').removeClass('popup-mobile').css('top', newHeight).toggle();
+     };
+    });
+
+    $('html').click(function() {
+     $('.popup').hide();
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $(this).parent().hide();
+    });
+
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    </script>
 
 </body>
 </html>
