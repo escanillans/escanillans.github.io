@@ -16,6 +16,45 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 </style>
 <body class="w3-black">
 
@@ -115,42 +154,35 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="work">
     <h2 class="w3-text-light-grey">Work Experience</h2>
     <hr style="width:200px" class="w3-opacity">
-    <div class="row">
-      <div class="col-sm-4 portfolio-item">
-        <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-            <img class="img-fluid" src="images/cibmLogo.jpg" alt="">
-        </div>
-      </div>
-    <div class="col-sm-4 portfolio-item">
-      <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-        <div class="caption">
-          <div class="caption-content">
-            <i class="fa fa-search-plus fa-3x"></i>
-          </div>  
-        </div>
-          <img class="img-fluid" src="images/badgerLogo.jpg" alt="">
-      </div>
-    </div>
-    <div class="col-sm-4 portfolio-item">
-      <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-        <div class="caption">
-          <div class="caption-content">
-            <i class="fa fa-search-plus fa-3x"></i>
-          </div>
-        </div>
-          <img class="img-fluid" src="images/harvard.jpg" alt="">
+
+    <ol type="I">
+      <h3 class="w3-padding-16 w3-text-light-grey"><li>Building a Data Science Pipeline for Sports Data</li></h3>
+        <p>In Progress...</p>
+      <h3 class="w3-padding-16 w3-text-light-grey"><li>Lane Detection in Adverse Conditions</li></h3>
+        <p>In Progress...</p>
+      <h3 class="w3-padding-16 w3-text-light-grey"><li>Recursive Feature Elimination by Sensitivity Testing</li></h3>
+        <p>In Progress...</p>
+      <h3 class="w3-padding-16 w3-text-light-grey"><li>Contemporary Methods of Neural Machine Translation</li></h3>
+        <p>In Progress...</p>
+      <h3 class="w3-padding-16 w3-text-light-grey"><li>Evaluation of Gene-Environment Interaction for Ovarian Cancer</li></h3>
+        <p>In Progress...</p>
+  </ol>
+
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
       </div>
     </div>
-    <div class="col-sm-2"></div>
-    </div>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> <a href="BackgroundInfo/EscanillaResume.pdf">Download Resume</a>
-    </button>
+  <!-- End Work Section -->
   </div>
 
   
@@ -160,37 +192,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <ol type="I">
-  		<h3 class="w3-padding-16 w3-text-light-grey"><li>Building a Data Science Pipeline for Sports Data</li></h3>
+  		<h3 class="w3-padding-16 w3-text-light-grey"><li>Graduate Research Assistant</li></h3>
   			<p>In Progress...</p>
-  		<h3 class="w3-padding-16 w3-text-light-grey"><li>Lane Detection in Adverse Conditions</li></h3>
+  		<h3 class="w3-padding-16 w3-text-light-grey"><li>UW-Madison Summer Researcher</li></h3>
   			<p>In Progress...</p>
   		<h3 class="w3-padding-16 w3-text-light-grey"><li>Recursive Feature Elimination by Sensitivity Testing</li></h3>
   			<p>In Progress...</p>
   		<h3 class="w3-padding-16 w3-text-light-grey"><li>Contemporary Methods of Neural Machine Translation</li></h3>
   			<p>In Progress...</p>
-  		<h3 class="w3-padding-16 w3-text-light-grey"><li>Feature Selection for Breast Cancer Diagnoses</li></h3>
-  			<p>In Progress...</p>
   		<h3 class="w3-padding-16 w3-text-light-grey"><li>Evaluation of Gene-Environment Interaction for Ovarian Cancer</li></h3>
   			<p>In Progress...</p>
 	</ol>
-
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
   <!-- End Portfolio Section -->
   </div>
 
