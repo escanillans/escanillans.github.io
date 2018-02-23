@@ -160,7 +160,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <p>In Progress...</p>
       <h3 class="w3-padding-16 w3-text-light-grey"><li>UW-Madison Summer Researcher</li></h3>
         <p>In Progress...</p>
-      <h3 class="w3-padding-16 w3-text-light-grey"><li>Harvard Summer Researcher</li></h3>
+      <h3 class="w3-padding-16 w3-text-light-grey"><li>Harvard School of Public Health Summer Researcher</li></h3>
         <p>In Progress...</p>
       <h3 class="w3-padding-16 w3-text-light-grey"><li>Student Athletic Trainer</li></h3>
         <p>In Progress...</p>
@@ -180,10 +180,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </div>
     </div>
 
-    <button id="myBtn">Open Modal 2</button>
+    <button id="myBtn2">Open Modal 2</button>
 
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModa2l" class="modal">
 
       <!-- Modal content -->
       <div class="modal-content">
@@ -243,9 +243,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <script>
 // Get the modal
 var modal = document.getElementById('myModal');
+var modal2 = document.getElementById('myModal2');
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -253,17 +256,20 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
+    modal2.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    modal2.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        modal2..style.display = "none";
     }
 }
 </script>
