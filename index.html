@@ -31,6 +31,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
+  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-id-card-o w3-xxlarge"></i>
+    <p>WORK</p>
+  </a>
   <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-line-chart w3-xxlarge" style = "color:white"></i>
     <p>PROJECTS</p>
@@ -108,9 +112,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   <!-- Work Experience Grid Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="work_experience">
-    <h2 class="text-center">Work Experience</h2>
-    <hr>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="work">
+    <h2 class="w3-text-light-grey">Work Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
     <div class="row">
       <div class="col-sm-4 portfolio-item">
         <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
@@ -152,7 +156,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="projects">
-    <h2 class="w3-text-light-grey">My Projects</h2>
+    <h2 class="w3-text-light-grey">Projects</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <ol type="I">
@@ -214,102 +218,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
-      </div>
-    <div class="container">
-      <div class="row">
-      <div class="col-lg-8 mx-auto">
-      <div class="modal-body">
-        <h2>Automatic Target Recognition Center</h2>
-        <hr class="star-primary">
-          <img class="img-fluid img-centered" src="img/horse2zebra.jpg" alt="">
-            <p>Data augmentation research for the Air Force Research Laboratory Sensors Directorate using cycle-consistent adversal networks (CycleGANs). More information 
-                    coming later after public release.
-            </p>
-            <ul class="list-inline item-details">
-              <li>Technologies: TensorFlow, Python, Supercomputing
-            </ul>
-          <button class="btn btn-success" type="button" data-dismiss="modal">
-            <i class="fa fa-times"></i>Close
-          </button>
-      </div>
-      </div>
-        </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Perception, Control, and Cognition Laboratory - BYU</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/holodeck.png" alt="">
-                  <p>Inspired by recent successes in using deep reinforcement learning to beat 2D Atari games, we wanted to explore using deep learning in realistic 3D environments. Subsequently, I designed and built a photo-realistic world simulator in the gaming environment Unreal Engine that we could use to simulate agents in the real world.</p>
-                  <p>With the simulator, we have been able to study deep reinforcement learning algorithms that can extract information from simulated sensors and transform it into low-level actions to achieve goals in complex environments. The simulator architecture and the sensors I built are being used in a variety of research projects in the lab; for example, we are now using deep reinforcement learning in our simulator to teach drones to quickly navigate high-risk environments like forests.</p>
-                  <ul class="list-inline item-details">
-                    <li>Technologies: TensorFlow, Python, C++, Unreal Engine 4
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Software Engineer Intern - LGS Innovations</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/lgs.jpg" alt="">
-                  <p>I had the incredible opportunity to intern for LGS Innovations in Westminster, Colorado during summer 2016. I worked on the Base Station Router , a flagship product for LGS Innovations. I designed and built a new multi-threaded logger process for the BSR. This project improved logging for the BSR and made it much easier for developers to debug products that were deployed by the government in remote areas.</p>
-                      
-                  <p>My team designed it to be highly customizable so that it could be used for various customers and builds of the BSR. Our process enables dynamic manipulation of log filters and encrypts the logs. It uses a GUI to help customers and developers easily interact with it. Our project was integrated into the main codebase during my last week; many employees commented that they had never seen an intern project be integrated so quickly!</p>
-                      
-                  <p>The project gave me more experience working with a massive codebase in C++. It also gave me the opportunity to work with many different, highly-skilled engineers across the company who specialize in different areas.</p>
-                  <ul class="list-inline item-details">
-                    <li>Technologies: C++, Embedded Programming
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 </body>
 </html>
