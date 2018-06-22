@@ -258,6 +258,48 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </div>
 
       <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4"><img class="mainModalImg" src="images/binary.jpg" alt = "binary" width = "450" height="225"></button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content" background-color="w3-black">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title w3-center">Recursive Feature Elimination by Sensitivity Testing</h4>
+            </div>
+            <div class="modal-body">
+              <img class="modalImg" src="images/binary.jpg" alt = "binary" width = "400" height="200">
+              <p>
+                There is great interest in methods to improve human insight into trained non-linear models such as support vector machines (SVMs), deep neural networks, and large random forests. We show theoretically and empirically the benefit of a novel version of recursive feature elimination (RFE) called recursive feature elimination by sensitivity testing (RFEST). 
+              </p>
+              <p>
+                The goal of using RFEST is to discover relevant features in your dataset such that their combination is higher in predictive power, quality, and better interpretability. My empirical results use a real-world cancer genomics problem (demographic and genomic data) and on synthetic data where ground truth is known. Due to privacy constraints, I show how the algorithm can be used on a synthetic dataset (refer to github repository found below).
+              </p>
+              <p>
+                <ul>
+                  <li>Technologies: R, Python
+                </ul>
+              </p>
+              <p>
+                <ul>
+                  <li>PI: Dr. David Page</li>
+                  <li><a href="https://github.com/escanillans/recursive_elimination_by_sensitivity_testing" style = "text-decoration: none">Link to github repository.</a></li>
+                  <li><a href="ResearchPapers/rfest.pdf" style = "text-decoration: none">Link to manuscript.</a></li>
+                </ul>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      <!-- Trigger the modal with a button -->
       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"><img class="mainModalImg" src="images/laneDetect.jpg" alt = "car" width = "450" height="225"></button>
 
       <!-- Modal -->
@@ -272,7 +314,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             </div>
             <div class="modal-body">
               <img class="modalImg" src="images/laneDetect.jpg" alt = "car" width = "400" height="200">
-              <p>Lane detection and tracking has become a prominent area as the push for autonomous vehicles surges. Reasons for doing so includ automating and enhancing the driving experience. Current state-of-the-art involve using a combination of information (i.e. LiDAR, GPS, vehicle sensor information). This project focused on solely RGB input images. The primary goal was to show how we can create a robust solution for illumination problems (e.g. shadows). In turn, we reimplemented an approach that used an enhanced-gradient conversion and adaptive Canny edge detection in their lane detection algorithm. </p>
+              <p>Lane detection and tracking has become a prominent area as the push for autonomous vehicles surges. Reasons for doing so include automating and enhancing the driving experience. Current state-of-the-art involve using a combination of information (i.e. LiDAR, GPS, vehicle sensor information). This project focused on solely RGB input images. The primary goal was to show how we can create a robust solution for illumination problems (e.g. shadows). In turn, we reimplemented an approach that used an enhanced-gradient conversion and adaptive Canny edge detection in their lane detection algorithm. </p>
               <p>
                 <ul>
                   <li>Technologies: Python
@@ -328,47 +370,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </div>
       </div>      
             
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4"><img class="mainModalImg" src="images/binary.jpg" alt = "binary" width = "450" height="225"></button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal4" role="dialog">
-        <div class="modal-dialog">
-    
-          <!-- Modal content-->
-          <div class="modal-content" background-color="w3-black">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title w3-center">Recursive Feature Elimination by Sensitivity Testing</h4>
-            </div>
-            <div class="modal-body">
-              <img class="modalImg" src="images/binary.jpg" alt = "binary" width = "400" height="200">
-              <p>
-                There is great interest in methods to improve human insight into trained non-linear models, such as support vector machines (SVMs), deep neural networks, and large random forests. We show theoretically and empirically the benefit of a novel version of recursive feature elimination (RFE). 
-              </p>
-              <p>
-                The key idea is a simple twist on the kinds of sensitivity testing employed in computational learning theory with membership queries. That is, with membership queries, one can check whether changing the value of a feature in an example changes the label. In the real world, we usually cannot get answers to such queries, so our approach instead makes queries to a trained non-linear model. Our empirical results use a real-world cancer genomics problem and on synthetic data where ground truth is known.
-              </p>
-              <p>
-                <ul>
-                  <li>Technologies: R, Python
-                </ul>
-              </p>
-              <p>
-                <ul>
-                  <li>PI: Dr. David Page</li>
-                  <li><a href="https://github.com/escanillans/recursive_elimination_by_sensitivity_testing" style = "text-decoration: none">Link to github repository.</a></li>
-                  <li><a href="ResearchPapers/rfest.pdf" style = "text-decoration: none">Link to manuscript.</a></li>
-                </ul>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-      
-        </div>
-      </div>
           
       <!-- Trigger the modal with a button -->
       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5"><img class="mainModalImg" src="images/neuralMT.jpg" alt = "rnn" width = "450" height="225"></button>
